@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     get ':username', to: "profiles#show"
   end
   resources :posts
-  resources :user do
+  resources :users do
     get 'posts', to: "user#posts_index"
   end
 end
